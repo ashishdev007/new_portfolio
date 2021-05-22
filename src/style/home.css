@@ -1,0 +1,21 @@
+.home {
+}
+
+.intro {
+  position: absolute;
+
+  color: white;
+  background-color: #323232b0;
+
+  border-radius: 10px;
+  padding: 1.5%;
+
+  right: 10%;
+  top: 40%;
+}
+
+.logo {
+  margin: 0 1%;
+  background-color: #ddd;
+  border-radius: 95%;
+}

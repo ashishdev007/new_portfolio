@@ -1,0 +1,156 @@
+.hamburger {
+  position: absolute;
+  cursor: pointer;
+  width: 2.3em;
+  height: 1em;
+
+  top: 1%;
+  left: 1%;
+
+  z-index: 3000;
+}
+
+.hamburger:hover {
+  width: 2.5em;
+  height: 1.25em;
+}
+
+.hamburger > div {
+  height: 35%;
+  width: 100%;
+  background-color: white;
+  margin: 6px 0;
+  border-radius: 10%;
+}
+
+.dimmer {
+  background-color: rgba(0, 0, 0, 0);
+  position: fixed;
+  z-index: 1000;
+}
+
+.sidebar {
+  margin: 0;
+  padding: 0;
+  z-index: 2000;
+  width: 200px;
+  background-color: #323232b0;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+  opacity: 0;
+}
+
+.n-hide {
+  left: -110%;
+}
+
+.show {
+  animation: show 0.5s forwards;
+  -webkit-animation: show 0.5s forwards;
+}
+
+.hide {
+  animation: hide 0.5s backwards;
+  -webkit-animation: hide 0.5s backwards;
+}
+
+@keyframes show {
+  0% {
+    transform: translateX(-110%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes show {
+  0% {
+    transform: translateX(-110%);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0%);
+    opacity: 1;
+  }
+}
+
+@keyframes hide {
+  0% {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(-110%);
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes hide {
+  0% {
+    -webkit-transform: translateX(0%);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateX(-110%);
+    opacity: 0;
+  }
+}
+
+/* Sidebar links */
+.sidebar a {
+  display: block;
+  color: white;
+  padding: 16px;
+  width: 100%;
+  text-decoration: none;
+}
+
+/* Active/current link */
+.sidebar a.active {
+  background-color: white;
+  color: black;
+}
+
+/* Links on mouse-over */
+.sidebar a:hover:not(.active) {
+  background-color: #555;
+  font-size: 1.13em;
+  color: white;
+}
+
+/* Page content. The value of the margin-left property should match the value of the sidebar's width property */
+div.content {
+  margin-left: 200px;
+  padding: 1px 16px;
+  height: 1000px;
+}
+
+/* On screens that are less than 700px wide, make the sidebar into a topbar */
+@media screen and (max-width: 700px) {
+  .hamburger {
+    top: 1.5%;
+    left: 4%;
+  }
+  .sidebar {
+    width: 70%;
+    height: 100%;
+    /* position: relative; */
+  }
+  .sidebar a {
+    float: left;
+  }
+  div.content {
+    margin-left: 0;
+  }
+}
+
+/* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+}
