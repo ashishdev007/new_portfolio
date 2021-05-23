@@ -3,8 +3,8 @@ import '../style/about.css';
 
 const About = () => {
   return (
-    <div className="fill-parent about-container">
-      <div className="shade">
+    <div className="fill-parent background-shade">
+      <div className="content-shade">
         <div className="bold r-condensed h1 title">About Me</div>
         <div className="question">
           <div className="topic">Who am I?</div>

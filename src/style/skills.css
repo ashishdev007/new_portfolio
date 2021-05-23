@@ -1,0 +1,17 @@
+.skill-svg {
+  /* height: 5em; */
+  margin: 1em 0.5em;
+  width: 20%;
+}
+
+.skills-conatiner {
+  /* display: flex; */
+  width: 50%;
+  height: 100%;
+}
+
+.skills-conatiner > span {
+  margin: 1em 0.5em;
+  width: 20%;
+  height: fit-content;
+}
