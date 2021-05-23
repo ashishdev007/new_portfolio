@@ -71,9 +71,9 @@ const NavBar = (props) => {
           onClick={() => setShowBar(false)}
           exact
           activeClassName="active"
-          to="/contact"
+          to="/skills"
         >
-          Projects
+          Skills
         </NavLink>
         <a href={`/resume.pdf`}>Resume</a>
       </div>
