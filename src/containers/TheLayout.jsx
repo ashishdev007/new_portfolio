@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import NavBar from './Navbar';
 import TheContent from './TheContent';
-import Picture from '../assets/ashish.jpg';
+import Picture from '../assets/ashish_4.jpg';
 
 const TheLayout = () => {
   return (

@@ -3,7 +3,6 @@ import '../style/skills.css';
 import bash from '../assets/skills/bash.svg';
 import css from '../assets/skills/css.svg';
 import docker from '../assets/skills/docker.svg';
-import express from '../assets/skills/express.png';
 import git from '../assets/skills/git.svg';
 import github from '../assets/skills/github.svg';
 import html from '../assets/skills/html.svg';
