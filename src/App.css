@@ -23,6 +23,7 @@ body {
 
 .background-shade {
   background-color: #000000a3;
+  overflow: hidden;
 }
 
 .content-shade {
@@ -30,7 +31,7 @@ body {
   color: white;
 
   position: relative;
-  height: 96%;
+  height: 100%;
   max-height: 100%;
   width: 70%;
   margin-left: 14%;
@@ -40,12 +41,32 @@ body {
   display: flex;
   align-items: center;
   flex-direction: column;
+
+  overflow-y: scroll;
+  -ms-overflow-style: none; /*Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox */
+}
+
+.content-shade::-webkit-scrollbar {
+  width: 0; /* Remove scrollbar space 
+  background: transparent; /* Optional: just make scrollbar invisible */
 }
 
 .content-shade > .title {
   margin: 2% 0;
 }
 
+.segment {
+  position: relative;
+  background: #fff;
+  color: black;
+  -webkit-box-shadow: 0 1px 2px 0 rgb(34 36 38 / 15%);
+  box-shadow: 0 1px 2px 0 rgb(34 36 38 / 15%);
+  margin: 1rem 0;
+  padding: 1em 1em;
+  border-radius: 0.28571429rem;
+  border: 1px solid rgba(34, 36, 38, 0.15);
+}
 /* Safari */
 @-webkit-keyframes spin {
   0% {
@@ -114,4 +135,7 @@ body {
 
 .h1 {
   font-size: 2.5em;
+}
+.h2 {
+  font-size: 1.5em;
 }

@@ -1,0 +1,149 @@
+.project {
+  display: flex;
+  /* height: fit-content; */
+  height: 22%;
+  width: 95%;
+
+  margin: 1em 2em;
+  padding: 1% !important;
+}
+
+.project-image {
+  width: 25%;
+  height: 90%;
+  margin: 0.5em;
+
+  display: flex;
+  justify-content: center;
+}
+
+.project-image > img {
+  height: 100%;
+  /* height: 90%;
+  margin: 0.5em; */
+  /* border: 1px solid black; */
+
+  box-shadow: 1px 1px 2px 3px #ccccccd1;
+  border-radius: 5px;
+}
+
+.project > .description {
+  margin-top: 0.5em;
+  margin-left: 1em;
+
+  width: 75%;
+  /* position: absolute;
+  left: 25%; */
+}
+
+.description > div {
+  margin-bottom: 0.5em;
+}
+
+.description > div:nth-child(1) {
+  font-size: 1.25em;
+  text-decoration: underline;
+}
+
+.description > div:nth-child(2) {
+  color: rgba(0, 0, 0, 0.87);
+}
+
+.description > a > img {
+  height: 1em;
+}
+
+.spec-label {
+  color: #fff !important;
+  display: inline-block;
+  font-size: 0.85714286rem;
+
+  display: inline-block;
+  line-height: 1;
+  vertical-align: baseline;
+  margin: 0 0.14285714em;
+  background-color: #e8e8e8;
+  background-image: none;
+  padding: 0.5833em 0.833em;
+  color: rgba(0, 0, 0, 0.6);
+  text-transform: none;
+  font-weight: 700;
+  border: 0 solid transparent;
+  border-radius: 0.28571429rem;
+  -webkit-transition: background 0.1s ease;
+  transition: background 0.1s ease;
+}
+
+.code {
+  margin-top: 0.5em;
+}
+.code > img {
+  height: 1.5em;
+  margin: auto 0;
+  margin-right: 0.5em;
+}
+
+/* Project Boxes
+.project { */
+/* min-height: 250px; */
+/* background-color: rgba(255, 255, 255, 0.5) !important;
+  display: flex;
+}
+
+.project > .image {
+  width: 40%;
+  margin: auto;
+
+  -moz-box-shadow: 3px 3px 5px 6px #ccccccd1;
+  -webkit-box-shadow: 3px 3px 5px 6px #ccccccd1;
+  box-shadow: 1px 1px 2px 3px #ccccccd1;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.project > .content {
+  margin-left: 1.5%;
+}
+
+.project > .content > .header {
+  color: rgba(0, 0, 0, 0.85);
+  font-size: 1.5em;
+  font-weight: 700;
+}
+
+.project > .content > .meta {
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 1em;
+  margin: 0.25em 0 0.25em 0;
+}
+
+.project > .items {
+  margin: auto;
+  height: 100%;
+}
+.project > .items > .item {
+  height: 100%;
+}
+.project > .items > .item > .image {
+  display: flex;
+}
+
+.project > .items > .item > .image > img {
+  margin: auto;
+}
+
+.project > .content > .description {
+  margin: 0.7em 0;
+}
+.project > .content > .description > p {
+  margin-bottom: 0.7em;
+}
+
+.meta > a {
+  cursor: pointer;
+}
+
+.code .icon {
+  font-weight: 300;
+} */
